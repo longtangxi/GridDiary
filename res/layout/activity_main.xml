@@ -1,0 +1,241 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#999999" >
+        
+        <TableRow>
+            <TextView 
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="日期"
+                />
+             <TextView  
+                android:id="@+id/week"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:hint="星期"
+                />
+			<TextView 
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+			    />
+        
+        </TableRow>
+        <TableRow >
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+			    />
+            <Spinner
+                android:id="@+id/mood"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dp" />
+            <Spinner
+                android:id="@+id/weather"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:prompt="@string/weather"
+                android:gravity="center_horizontal"/>
+        </TableRow>
+        </TableLayout>
+//  第一行网格
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="#FFFFFF">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/first_question" />
+            <EditText
+                android:id="@+id/first_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:layout_weight="4" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+          <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/second_question" />
+
+          <EditText
+                android:id="@+id/second_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:layout_weight="4" />
+        </LinearLayout>       
+	 </LinearLayout>
+
+//  第二行网格
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="#FFFFFF">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+          <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/third_question" />
+          <EditText
+                android:id="@+id/third_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:layout_weight="4" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+          <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/forth_question" />
+          <EditText
+                android:id="@+id/forth_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:layout_weight="4" />
+        </LinearLayout>       
+	 </LinearLayout>
+//  第三行网格
+    <LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="#FFFFFF">
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="1"
+            >
+          <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/fifth_question" />
+          <EditText
+                android:id="@+id/fifith_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:layout_weight="4" />
+        </LinearLayout>
+           
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" 
+            android:layout_weight="1">
+          <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/sixth_question" />
+          <EditText
+                android:id="@+id/sixth_answer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@null"
+                android:layout_weight="4" />
+        </LinearLayout>       
+	 </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+            <Button 
+                 android:id="@+id/btncalendar"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:background="@drawable/calendarview"
+                 />
+            <Button 
+                 android:id="@+id/btnsave"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:text="保存"
+                 />
+            <Button 
+                 android:id="@+id/btnread"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:gravity="center"
+                 android:text="阅读"
+                 />    
+    </LinearLayout>
+
+</LinearLayout>

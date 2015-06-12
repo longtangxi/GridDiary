@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GridNote</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="first_question">今天过得怎么样？</string>
+    <string name="second_question">今天的作息正常吗？</string>
+    <string name="third_question">今天我吃了什么？</string>
+    <string name="forth_question">今天发生了什么新鲜事？</string>
+    <string name="fifth_question">我今天完成了什么？</string>
+    <string name="sixth_question">今天读了什么书？</string>
+    <string name="weather">天气</string>
+	<string-array name="weather">
+	    <item name="sunny">晴朗</item> 
+        <item name="cloudy">多云</item>
+        <item name="overcast">阴天</item>
+        <item name="rain">降雨</item>
+        <item name="snow">降雪</item> 
+        <item name="hail">冰雹</item> 
+        <item name="smoky">烟雾</item> 
+        <item name="sandstorm">沙尘暴</item>
+	</string-array>
+</resources>
